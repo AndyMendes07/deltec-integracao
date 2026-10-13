@@ -1,0 +1,23 @@
+@font-face{font-family:Archivo;src:url(../assets/fonts/archivo.woff2) format("woff2");font-weight:100 900;font-stretch:62% 125%;font-display:block}
+@font-face{font-family:Inter;src:url(../assets/fonts/inter.woff2) format("woff2");font-weight:100 900;font-display:block}
+
+:root{
+  --bg:#1B1F22;--surface:#272B2E;--text:#F8F9F9;--muted:#BEC6C7;
+  --accent:#26CDB8;--accent-deep:#007873;--on-accent:#1B1F22;
+  --fs-capa:clamp(48px,3.75vw,96px);
+  --fs-cena:clamp(32px,2.5vw,64px);
+  --fs-corpo:clamp(18px,1.25vw,32px);
+  --fs-rotulo:clamp(18px,.9375vw,24px);
+  --f-titulo:Archivo,system-ui,sans-serif;
+  --f-corpo:Inter,system-ui,sans-serif;
+}
+:root[data-theme="light"] .cena:not(.cena-capa):not(.cena-video){
+  --bg:#F8F9F9;--surface:#FFFFFF;--text:#1B1F22;--muted:#3E4447;
+  --accent:#007873;--accent-deep:#00967A;--on-accent:#F8F9F9;
+}
+
+.t-capa,.t-cena{font-family:var(--f-titulo);font-stretch:115%;font-weight:700;line-height:1.1}
+.t-capa{font-size:var(--fs-capa)}
+.t-cena{font-size:var(--fs-cena);font-weight:600}
+.t-corpo{font-family:var(--f-corpo);font-size:var(--fs-corpo);font-weight:400;line-height:1.4}
+.t-rotulo{font-family:var(--f-corpo);font-size:var(--fs-rotulo);font-weight:500;color:var(--muted)}

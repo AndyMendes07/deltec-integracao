@@ -1,0 +1,460 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Integração Deltec</title>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search);
+  window.MODO = { instante: q.has("instant"), ocr: q.has("ocr") };
+})();
+</script>
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/cenas.css">
+</head>
+<body>
+<!-- CAP:abertura -->
+<section class="cena cena-capa" id="cena-1" data-scene="cena-1" data-type="capa" data-slides="1" data-steps="1" data-chapter="00">
+<div class="luzes" aria-hidden="true"><i class="luz luz-a"></i><i class="luz luz-b"></i><i class="luz luz-c"></i></div>
+<p class="capa-num t-capa">Integração 2026</p>
+<h1 class="t-capa capa-titulo">INTEGRAÇÃO DE NOVOS COLABORADORES</h1>
+<p class="t-corpo capa-sub">Seu primeiro dia na Deltec começa aqui.</p>
+<p class="t-rotulo capa-sub">DELTEC INDUSTRIAL — VALINHOS/SP</p>
+</section>
+<section class="cena cena-capa" id="cena-2" data-scene="cena-2" data-type="capa" data-slides="2" data-steps="1" data-chapter="00">
+<div class="luzes" aria-hidden="true"><i class="luz luz-a"></i><i class="luz luz-b"></i><i class="luz luz-c"></i></div>
+<p class="capa-num t-capa">ABERTURA</p>
+<h1 class="t-capa capa-titulo">Bem-vindo(a)!</h1>
+<p class="t-corpo capa-sub">à Deltec</p>
+</section>
+<section class="cena cena-linha-tempo" id="cena-3" data-scene="cena-3" data-type="linha-tempo" data-slides="3" data-steps="1" data-chapter="00">
+<header class="cena-cab"><p class="cena-rotulo t-rotulo">ABERTURA</p><h2 class="cena-titulo t-cena">Como será a sua integração hoje</h2></header>
+<div class="lt-extremos">
+<div class="vidro anima lt-ponta"><span class="t-rotulo">INÍCIO</span><strong class="lt-hora t-corpo" data-bind="cronograma.inicio.hora"></strong><span class="t-corpo" data-bind="cronograma.inicio.texto"></span></div>
+<div class="vidro anima lt-ponta"><span class="t-rotulo">ENCERRAMENTO</span><strong class="lt-hora t-corpo" data-bind="cronograma.encerramento.hora"></strong><span class="t-corpo" data-bind="cronograma.encerramento.texto"></span></div>
+</div>
+<ol class="lt-lista" data-cronograma></ol>
+<p class="t-rotulo lt-nota" data-bind="cronograma.aviso"></p>
+</section>
+<section class="cena cena-video" id="cena-4" data-scene="cena-4" data-type="video" data-slides="4" data-steps="2" data-chapter="00">
+<header class="cena-cab"><p class="cena-rotulo t-rotulo">ABERTURA</p><h2 class="cena-titulo t-cena">Boas-vindas do diretor</h2></header>
+<div class="video-moldura"><video src="assets/video/diretor.mp4" preload="metadata" playsinline></video></div>
+</section>
+<section class="cena cena-video" id="cena-5" data-scene="cena-5" data-type="video" data-slides="5" data-steps="2" data-chapter="00">
+<header class="cena-cab"><p class="cena-rotulo t-rotulo">ABERTURA</p><h2 class="cena-titulo t-cena">Conheça a Deltec</h2></header>
+<div class="video-moldura"><video src="assets/video/institucional.mp4" preload="metadata" playsinline></video></div>
+</section>
+<!-- /CAP:abertura -->
+<!-- CAP:a-deltec -->
+<section class="cena cena-capa" id="cena-6" data-scene="cena-6" data-type="capa" data-slides="6" data-steps="1" data-chapter="01">
+<div class="luzes" aria-hidden="true"><i class="luz luz-a"></i><i class="luz luz-b"></i><i class="luz luz-c"></i></div>
+<p class="capa-num t-capa">01</p>
+<h1 class="t-capa capa-titulo">A Deltec</h1>
+<p class="t-corpo capa-sub">Quem somos, nossa história, mercados e clientes</p>
+</section>
+<section class="cena cena-cards" id="cena-7" data-scene="cena-7" data-type="cards" data-slides="7" data-steps="1" data-chapter="01">
+<header class="cena-cab"><p class="cena-rotulo t-rotulo">A DELTEC · 01</p><h2 class="cena-titulo t-cena">Quem somos</h2></header>
+<p class="vidro anima t-corpo cards-intro">A Deltec é dirigida pelos sócios José Fernando Palaro, que lidera a empresa desde sua fundação, e Marlon Griesang, que, desde 2016, tem contribuído para um crescimento expressivo da empresa.</p>
+<ul class="cards-grade cards-ricos cards-foto"><li class="card anima"><img class="card-foto" src="assets/img/644ab9de03.webp" alt=""><span class="t-rotulo card-rot">EXPERIÊNCIA</span><strong class="t-corpo card-big">Desde 1986</strong><span class="t-corpo">de experiência no mercado</span></li><li class="card anima"><img class="card-foto" src="assets/img/8b616e3acb.webp" alt=""><span class="t-rotulo card-rot">PRESENÇA</span><strong class="t-corpo card-big">Brasil, Argentina, México e Peru</strong><span class="t-corpo">Equipe de vendas em todo o Brasil, Argentina, México e Peru.</span></li><li class="card anima"><img class="card-foto" src="assets/img/bcb773f5d7.webp" alt=""><span class="t-rotulo card-rot">NOSSO TIME</span><strong class="t-corpo card-big">Pessoas</strong></li><li class="card anima"><img class="card-foto" src="assets/img/3302109714.webp" alt=""><span class="t-rotulo card-rot">OPERAÇÃO</span><strong class="t-corpo card-big">Produção verticalizada</strong><span class="t-corpo">&amp; Engenharia voltada à inovação</span></li></ul>
+</section>
+<section class="cena cena-linha-tempo" id="cena-8" data-scene="cena-8" data-type="linha-tempo" data-slides="8" data-steps="1" data-chapter="01">
+<header class="cena-cab"><p class="cena-rotulo t-rotulo">A DELTEC · 01</p><h2 class="cena-titulo t-cena">Nossa história: de 1986 até hoje</h2></header>
+<ol class="lt-lista lt-anos"><li class="marco anima"><img class="lt-ico" src="assets/img/timeline/ico-1986.webp" alt=""><time class="lt-hora t-corpo">1986</time><span class="t-corpo">Fundação da DELTEC.</span></li><li class="marco anima"><img class="lt-ico" src="assets/img/timeline/ico-1990.webp" alt=""><time class="lt-hora t-corpo">1990</time><span class="t-corpo">Parceria tecnológica com empresa americana.</span></li><li class="marco anima"><img class="lt-ico" src="assets/img/timeline/ico-1991.webp" alt=""><time class="lt-hora t-corpo">1991</time><span class="t-corpo">Nova sede em Campinas-SP</span></li><li class="marco anima"><img class="lt-ico" src="assets/img/timeline/ico-1992.webp" alt=""><time class="lt-hora t-corpo">1992</time><span class="t-corpo">Primeira linha contínua de pintura.</span></li><li class="marco anima"><img class="lt-ico" src="assets/img/timeline/ico-2002.webp" alt=""><time class="lt-hora t-corpo">2002</time><span class="t-corpo">Utilização de robôs em linhas de pintura.</span></li><li class="marco anima"><img class="lt-ico" src="assets/img/timeline/ico-2008.webp" alt=""><time class="lt-hora t-corpo">2008</time><span class="t-corpo">Consolidação no mercado de atuação.</span></li><li class="marco anima"><img class="lt-ico" src="assets/img/timeline/ico-2016.webp" alt=""><time class="lt-hora t-corpo">2016</time><span class="t-corpo">Evolução da Marca.</span></li><li class="marco anima"><img class="lt-ico" src="assets/img/timeline/ico-2017.webp" alt=""><time class="lt-hora t-corpo">2017</time><span class="t-corpo">Parceria tecnológica europeia.</span></li><li class="marco anima"><img class="lt-ico" src="assets/img/timeline/ico-2018.webp" alt=""><time class="lt-hora t-corpo">2018</time><span class="t-corpo">Nacionalização da produção de componentes europeus.</span></li><li class="marco anima"><img class="lt-ico" src="assets/img/timeline/ico-2020.webp" alt=""><time class="lt-hora t-corpo">2020</time><span class="t-corpo">Exportações para América Latina.</span></li><li class="marco anima"><img class="lt-ico" src="assets/img/timeline/ico-2021.webp" alt=""><time class="lt-hora t-corpo">2021</time><span class="t-corpo">Filial em Sumaré-SP. Corte e dobra/caldeiraria.</span></li><li class="marco anima"><img class="lt-ico" src="assets/img/timeline/ico-2023.webp" alt=""><time class="lt-hora t-corpo">2023</time><span class="t-corpo">Novo parque industrial em Valinhos-SP.</span></li><li class="marco anima"><img class="lt-ico" src="assets/img/timeline/ico-2024.webp" alt="WAGNER"><time class="lt-hora t-corpo">2024</time><span class="t-corpo">Nova parceria tecnológica.</span></li><li class="marco anima"><img class="lt-ico" src="assets/img/timeline/ico-2025.webp" alt=""><time class="lt-hora t-corpo">2025</time><span class="t-corpo">Início das operações no México e América Central.</span></li></ol>
+<div class="vidro anima lt-estrutura"><img class="icone" src="assets/img/aa203e25d0.webp" alt=""><p class="t-corpo"><strong>Veja nossa estrutura!</strong> Aponte a câmera do celular para o QR Code ou <a data-href="links.estrutura" target="_blank" rel="noopener">clique aqui</a>.</p><img class="qr-mini" src="assets/qr/estrutura.png" alt="QR Code do vídeo da estrutura Deltec"></div>
+</section>
+<section class="cena cena-cards" id="cena-9" data-scene="cena-9" data-type="cards" data-slides="9" data-steps="1" data-chapter="01">
+<header class="cena-cab"><p class="cena-rotulo t-rotulo">A DELTEC · 01</p><h2 class="cena-titulo t-cena">Conheça nossos mercados de atuação</h2></header>
+<ul class="cards-grade cards-mercados"><li class="card anima"><img src="assets/img/6ee3f2898b.webp" alt=""><span class="t-corpo">Agroindústria</span></li><li class="card anima"><img src="assets/img/86c4e8584a.webp" alt=""><span class="t-corpo">Eletroeletrônico</span></li><li class="card anima"><img src="assets/img/d1d4379fa1.webp" alt=""><span class="t-corpo">Aeronáutica</span></li><li class="card anima"><img src="assets/img/84eea842e7.webp" alt=""><span class="t-corpo">Sist. de Armazenagem</span></li><li class="card anima"><img src="assets/img/bd37a8b77a.webp" alt=""><span class="t-corpo">Automotivo</span></li><li class="card anima"><img src="assets/img/566c004a5a.webp" alt=""><span class="t-corpo">Plástico</span></li><li class="card anima"><img src="assets/img/f9043c581e.webp" alt=""><span class="t-corpo">Metalmecânico</span></li><li class="card anima"><img src="assets/img/0fe333f36e.webp" alt=""><span class="t-corpo">Moveleiro</span></li><li class="card anima"><img src="assets/img/cef7139c87.webp" alt=""><span class="t-corpo">Autopeças</span></li><li class="card anima"><img src="assets/img/3374c05c16.webp" alt=""><span class="t-corpo">Estruturas Metálicas</span></li><li class="card anima"><img src="assets/img/3d381ccc9d.webp" alt=""><span class="t-corpo">Construção Civil</span></li><li class="card anima"><img src="assets/img/d4a381b6ab.webp" alt=""><span class="t-corpo">Outros</span></li></ul>
+</section>
+<section class="cena cena-logos" id="cena-10" data-scene="cena-10" data-type="logos" data-slides="10" data-steps="1" data-chapter="01">
+<header class="cena-cab"><p class="cena-rotulo t-rotulo">A DELTEC · 01</p><h2 class="cena-titulo t-cena">Mais de 1.000 clientes atendidos e satisfeitos</h2></header>
+<div class="logos-corpo"><div class="vidro anima logos-num"><p class="t-rotulo">CLIENTES</p><p class="contador num-grande" data-final="+ de 1.000">+ de 1.000</p><p class="t-corpo">clientes atendidos e satisfeitos com as soluções Deltec</p></div>
+<figure class="vidro anima logos-mural"><img src="assets/img/4084b791b2.webp" alt=""></figure></div>
+</section>
+<section class="cena cena-cards" id="cena-11" data-scene="cena-11" data-type="cards" data-slides="11" data-steps="1" data-chapter="01">
+<header class="cena-cab"><h2 class="cena-titulo t-cena">OBJETIVOS DELTEC | 2025–2027</h2></header>
+<ul class="cards-grade cards-objetivos"><li class="card anima"><span class="num-medio">01</span><strong class="t-corpo card-big">FAZER BEM O QUE NOS PROPOMOS A FAZER</strong><span class="t-corpo">Excelência na execução, com qualidade, prazo e responsabilidade.</span></li><li class="card anima"><span class="num-medio">02</span><strong class="t-corpo card-big">TER UMA CULTURA FORTE</strong><span class="t-corpo">Valores vividos na prática e atitudes coerentes em todos os níveis.</span></li><li class="card anima"><span class="num-medio">03</span><strong class="t-corpo card-big">SER UM LUGAR ONDE AS PESSOAS QUEIRAM TRABALHAR</strong><span class="t-corpo">Um ambiente que desenvolve, reconhece e dá orgulho de pertencer.</span></li><li class="card anima"><span class="num-medio">04</span><strong class="t-corpo card-big">CRESCER</strong><span class="t-corpo">Ampliar mercado, capacidade e oportunidades de forma sustentável.</span></li><li class="card anima"><span class="num-medio">05</span><strong class="t-corpo card-big">ATINGIR NOSSO RESULTADO OPERACIONAL</strong><span class="t-corpo">Transformar esforço, crescimento e eficiência em rentabilidade.</span></li><li class="card anima" data-obra-entrada><span class="num-medio">06</span><strong class="t-corpo card-big">CONCLUIR NOSSO PLANO DE AMPLIAÇÃO</strong><span class="t-corpo">Preparar a estrutura da DELTEC para o próximo ciclo de crescimento.</span></li></ul>
+<p class="t-rotulo cards-nota-fim">SEIS OBJETIVOS. UMA DIREÇÃO. UMA DELTEC MAIS FORTE.</p>
+</section>
+<!-- /CAP:a-deltec -->
+<!-- CAP:obra -->
+<section class="cena cena-video" id="cena-12" data-scene="cena-12" data-type="video" data-slides="12,13,14,15,16,17,18,19,20,21,22" data-steps="2" data-chapter="02">
+<div class="video-moldura"><video src="assets/video/obra.mp4" preload="metadata" playsinline></video></div>
+</section>
+<!-- /CAP:obra -->
+<!-- CAP:quem-lidera -->
+<section class="cena cena-pessoas" id="cena-23" data-scene="cena-23" data-type="pessoas" data-slides="23" data-steps="1" data-chapter="03">
+<header class="cena-cab"><p class="cena-rotulo t-rotulo">QUEM LIDERA · 03</p><h2 class="cena-titulo t-cena">Diretoria: seus principais contatos</h2></header>
+<ul class="pessoas-grade pessoas-3"><li class="pessoa anima"><img class="foto" src="assets/img/14071b118f.webp" alt="Marlon Griesang"><strong class="t-corpo pessoa-nome">Marlon Griesang</strong><span class="t-corpo pessoa-cargo">Diretor Comercial · Sócio</span></li><li class="pessoa anima"><img class="foto" src="assets/img/f15cba2d33.webp" alt="José Palaro"><strong class="t-corpo pessoa-nome">José Palaro</strong><span class="t-corpo pessoa-cargo">Diretor administrativo · Sócio-fundador da Deltec</span></li><li class="pessoa anima"><img class="foto" src="assets/img/c6d1659fb7.webp" alt="Diego Guth"><strong class="t-corpo pessoa-nome">Diego Guth</strong><span class="t-corpo pessoa-cargo">Diretor Financeiro/Operacional</span></li></ul>
+</section>
+<section class="cena cena-pessoas" id="cena-24" data-scene="cena-24" data-type="pessoas" data-slides="24" data-steps="1" data-chapter="03">
+<header class="cena-cab"><p class="cena-rotulo t-rotulo">QUEM LIDERA · 03</p><h2 class="cena-titulo t-cena">Nível estratégico: quem você pode procurar</h2></header>
+<ul class="pessoas-grade"><li class="pessoa anima"><img class="foto" src="assets/img/105fd9c09d.webp" alt="Fernanda Lutten Garcia"><strong class="t-corpo pessoa-nome">Fernanda Lutten Garcia</strong><span class="t-corpo pessoa-cargo">Pessoas &amp; Cultura, Facilities e SESMT</span></li><li class="pessoa anima"><img class="foto" src="assets/img/20ad7f659a.webp" alt="Alexandre Tadeu"><strong class="t-corpo pessoa-nome">Alexandre Tadeu</strong><span class="t-corpo pessoa-cargo">Manufatura</span></li><li class="pessoa anima"><img class="foto" src="assets/img/a87be52463.webp" alt="Lauand Santos"><strong class="t-corpo pessoa-nome">Lauand Santos</strong><span class="t-corpo pessoa-cargo">Montagem, Start-up</span></li><li class="pessoa anima"><img class="foto" src="assets/img/fda2c919a8.webp" alt="Alexandre Móvio"><strong class="t-corpo pessoa-nome">Alexandre Móvio</strong><span class="t-corpo pessoa-cargo">Comercial</span></li><li class="pessoa anima"><img class="foto" src="assets/img/339336e501.webp" alt="Vitor Palaro"><strong class="t-corpo pessoa-nome">Vitor Palaro</strong><span class="t-corpo pessoa-cargo">TI - ERP</span></li><li class="pessoa anima"><img class="foto" src="assets/img/085e9febe7.webp" alt="Vanderlei Prince"><strong class="t-corpo pessoa-nome">Vanderlei Prince</strong><span class="t-corpo pessoa-cargo">Supply Chain</span></li><li class="pessoa anima"><img class="foto" src="assets/img/a8268c6510.webp" alt="Henrique Bosqueiro"><strong class="t-corpo pessoa-nome">Henrique Bosqueiro</strong><span class="t-corpo pessoa-cargo">Engenharia</span></li></ul>
+</section>
+<!-- /CAP:quem-lidera -->
+<!-- CAP:primeiros-dias -->
+<section class="cena cena-capa" id="cena-25" data-scene="cena-25" data-type="capa" data-slides="25" data-steps="1" data-chapter="04">
+<div class="luzes" aria-hidden="true"><i class="luz luz-a"></i><i class="luz luz-b"></i><i class="luz luz-c"></i></div>
+<p class="capa-num t-capa">04</p>
+<h1 class="t-capa capa-titulo">Seus primeiros dias</h1>
+<p class="t-corpo capa-sub">Kit de boas-vindas, comunicação, vestimenta e crachá</p>
+</section>
+<section class="cena cena-cards" id="cena-26" data-scene="cena-26" data-type="cards" data-slides="26" data-steps="1" data-chapter="04">
+<header class="cena-cab"><p class="cena-rotulo t-rotulo">SEUS PRIMEIROS DIAS · 04</p><h2 class="cena-titulo t-cena">Kit de boas-vindas Deltec</h2></header>
+<ul class="cards-grade cards-ricos"><li class="card anima"><img src="assets/img/d5578c6a30.webp" alt=""><strong class="t-corpo">Camisa Deltec</strong><span class="t-corpo card-txt">Após 90 dias na Deltec, você recebe uma camiseta, exceto quem já a recebeu no uniforme de admissão.</span></li><li class="card anima"><img src="assets/img/047c445808.webp" alt=""><strong class="t-corpo">Squeeze Deltec</strong><span class="t-corpo card-txt">Uma garrafa de água personalizada, pensada para promover o bem-estar e a hidratação.</span></li><li class="card anima"><img src="assets/img/d4a381b6ab.webp" alt=""><strong class="t-corpo">Ecobag</strong><span class="t-corpo card-txt">Uma sacola reutilizável, entregue na Integração junto com os EPIs (Equipamentos de Proteção Individual).</span></li><li class="card anima"><img src="assets/img/a955f11341.webp" alt=""><strong class="t-corpo">QR Code das Comunidades</strong><span class="t-corpo card-txt">Você recebe um QR Code com acesso às Comunidades Deltec, para facilitar a integração e o engajamento com as novidades.</span></li></ul><img class="mascote mascote-base" data-pose="aceno" src="assets/img/ff575aa634.webp" alt="">
+</section>
+<section class="cena cena-cards" id="cena-27" data-scene="cena-27" data-type="cards" data-slides="27" data-steps="1" data-chapter="04">
+<header class="cena-cab"><p class="cena-rotulo t-rotulo">SEUS PRIMEIROS DIAS · 04</p><h2 class="cena-titulo t-cena">Comunidade Deltec no WhatsApp</h2></header>
+<p class="t-corpo cards-intro">Entre na comunidade da Deltec e fique por dentro das novidades.</p>
+<div class="cards-misto"><ul class="cards-grade"><li class="card anima"><span class="t-corpo card-txt">Comunicados importantes</span></li><li class="card anima"><span class="t-corpo card-txt">Informações sobre aniversariantes</span></li><li class="card anima"><span class="t-corpo card-txt">Outras novidades e acontecimentos internos</span></li></ul><figure class="vidro anima cards-qr"><img src="assets/img/8fcb75c0fd.webp" alt="QR Code do grupo Comunidade Deltec no WhatsApp"></figure><img class="mascote mascote-base" data-pose="mostra" src="assets/img/75f31d09ac.webp" alt=""></div>
+<p class="vidro anima cards-nota t-corpo"><img class="icone" src="assets/img/1ffe66c6c2.webp" alt=""><span>Uma maneira prática e rápida de se manter informado sobre o dia a dia da empresa.</span></p>
+</section>
+<section class="cena cena-cards" id="cena-28" data-scene="cena-28" data-type="cards" data-slides="28" data-steps="1" data-chapter="04">
+<header class="cena-cab"><p class="cena-rotulo t-rotulo">SEUS PRIMEIROS DIAS · 04</p><h2 class="cena-titulo t-cena">O que vestir na Deltec</h2></header>
+<ul class="cards-grade cards-ricos"><li class="card anima"><img src="assets/img/d09cee97e7.webp" alt=""><strong class="t-corpo">Recepcionistas</strong><span class="t-corpo card-txt">Utilizam camisetas Deltec, que devem ser usadas para o atendimento de clientes e visitantes.</span></li><li class="card anima"><img src="assets/img/b1aba0c59a.webp" alt=""><strong class="t-corpo">Escritório</strong><span class="t-corpo card-txt">Não há exigências específicas, mas recomendamos vestimentas mais profissionais, mantendo conforto e boa aparência.</span></li><li class="card anima"><img src="assets/img/316df1c9e7.webp" alt=""><strong class="t-corpo">Colaboradores de campo</strong><span class="t-corpo card-txt">Utilizam camiseta e calça fornecidas pela empresa, para fácil identificação.</span></li><li class="card anima"><img src="assets/img/b5d71f6f6b.webp" alt=""><strong class="t-corpo">Fábrica</strong><span class="t-corpo card-txt">Utilizam camiseta Deltec e calça apropriada para as atividades no ambiente fabril.</span></li></ul><p class="vidro anima cards-nota t-corpo"><img class="icone" src="assets/img/9d701fbc1a.webp" alt=""><span><strong>Atenção:</strong>  roupas muito informais (camiseta de time ou partido politico, shorts, regatas ou chinelos) não são recomendadas para o ambiente corporativo.</span></p>
+</section>
+<section class="cena cena-comparativo" id="cena-29" data-scene="cena-29" data-type="comparativo" data-slides="29" data-steps="1" data-chapter="04">
+<header class="cena-cab"><p class="cena-rotulo t-rotulo">SEUS PRIMEIROS DIAS · 04</p><h2 class="cena-titulo t-cena">Seu crachá</h2></header>
+<div class="cracha-corpo">
+<figure class="vidro anima cracha-fig"><div class="cracha"><img class="cracha-img" src="assets/img/e17aab3d56.webp" alt=""><img class="cracha-mascote mascote" data-pose="aponta" src="assets/img/c48994f9c4.webp" alt=""></div></figure>
+<div class="cracha-dir">
+<p class="vidro anima cmp-intro t-corpo"><span>Entregue na Integração. Todo colaborador pode circular com o crachá nas dependências da empresa durante a jornada de trabalho.</span></p>
+<div class="cmp-colunas">
+<div class="vidro anima coluna"><img class="icone" src="assets/img/c1d458bb7a.webp" alt=""><p class="t-rotulo">RH</p><p class="t-corpo">É responsável por entregar o crachá e por informar horários fora da jornada de trabalho para liberação.</p></div>
+<div class="vidro anima coluna"><img class="icone" src="assets/img/1f86f6a55f.webp" alt=""><p class="t-rotulo">FACILITIES</p><p class="t-corpo">É responsável pela liberação dos crachás nas áreas de acesso e por perdas, extravios e confecções.</p></div>
+</div>
+<div class="cmp-avisos"><p class="vidro anima cmp-aviso t-corpo"><img class="icone" src="assets/img/767161e8f6.webp" alt=""><span><strong>Fora do horário de rotina?</strong>  Informe o RH.</span></p><p class="vidro anima cmp-aviso t-corpo"><img class="icone" src="assets/img/9d701fbc1a.webp" alt=""><span><strong>Perda ou extravio:</strong>  será cobrada uma taxa para a 2ª via.</span></p></div>
+</div></div>
+</section>
+<!-- /CAP:primeiros-dias -->
+<!-- CAP:jornada -->
+<section class="cena cena-capa" id="cena-30" data-scene="cena-30" data-type="capa" data-slides="30" data-steps="1" data-chapter="05">
+<div class="luzes" aria-hidden="true"><i class="luz luz-a"></i><i class="luz luz-b"></i><i class="luz luz-c"></i></div>
+<p class="capa-num t-capa">05</p>
+<h1 class="t-capa capa-titulo">Jornada de trabalho</h1>
+<p class="t-corpo capa-sub">Ponto, atestados, horas extras, portal Vibe, salário e férias</p>
+</section>
+<section class="cena cena-passos" id="cena-31" data-scene="cena-31" data-type="passos" data-slides="31" data-steps="1" data-chapter="05">
+<header class="cena-cab"><p class="cena-rotulo t-rotulo">JORNADA, PONTO E SALÁRIO · 05</p><h2 class="cena-titulo t-cena">Ponto: 4 registros por dia</h2></header>
+<div class="passos-corpo"><div class="passos-col">
+<p class="vidro anima passos-prazo t-corpo"><img class="icone" src="assets/img/d4f85096c9.webp" alt=""><span><strong>Registram o ponto:</strong> CLT e aprendizes.</span></p>
+<p class="vidro anima passos-prazo t-corpo"><img class="icone" src="assets/img/3f571065ab.webp" alt=""><span><strong>Isentos de registro:</strong> colaboradores em grau de confiança.</span></p>
+<p class="t-rotulo passos-rot">SEUS 4 REGISTROS DIÁRIOS</p>
+<ol class="passos-lista"><li class="passo anima"><span class="passo-n t-corpo">1</span><div><strong class="t-corpo">Entrada</strong><p class="t-corpo">Entrada na jornada de trabalho</p></div></li><li class="passo anima"><span class="passo-n t-corpo">2</span><div><strong class="t-corpo">Saída</strong><p class="t-corpo">Saída para a refeição principal</p></div></li><li class="passo anima"><span class="passo-n t-corpo">3</span><div><strong class="t-corpo">Retorno</strong><p class="t-corpo">Retorno da refeição principal</p></div></li><li class="passo anima"><span class="passo-n t-corpo">4</span><div><strong class="t-corpo">Fim</strong><p class="t-corpo">Fim da jornada de trabalho</p></div></li></ol></div>
+<figure class="passos-fig mascote-base anima"><img class="mascote" data-pose="mostra" src="assets/img/bd16ea1991.webp" alt=""></figure></div>
+</section>
+<section class="cena cena-comparativo" id="cena-32" data-scene="cena-32" data-type="comparativo" data-slides="32" data-steps="1" data-chapter="05">
+<header class="cena-cab"><p class="cena-rotulo t-rotulo">JORNADA, PONTO E SALÁRIO · 05</p><h2 class="cena-titulo t-cena">Ajustes, saídas e apuração do ponto</h2></header>
+<div class="cmp-colunas">
+<div class="vidro anima coluna"><img class="icone" src="assets/img/7524e23e4d.webp" alt=""><p class="t-rotulo">Ajuste de ponto</p><p class="t-corpo">A solicitação de ajuste deve ser feita diretamente no sistema Vibe.</p></div>
+<div class="vidro anima coluna"><img class="icone" src="assets/img/b5b360a5d2.webp" alt=""><p class="t-rotulo">Ausência durante a jornada</p><p class="t-corpo">Se precisar se ausentar da Deltec durante a jornada, registre a saída e o retorno no sistema.</p></div>
+</div>
+<div class="vidro anima apur"><div class="coluna"><p class="t-rotulo">APURAÇÃO DO PONTO</p><p class="t-corpo">O período de apuração vai do dia 21 de um mês ao dia 20 do mês seguinte.</p></div>
+<div class="apur-datas"><div class="apur-dia"><p class="num-medio">Dia 21</p><p class="t-corpo">mês atual</p></div><img class="icone" src="assets/img/2495e37ade.webp" alt=""><div class="apur-dia"><p class="num-medio">Dia 20</p><p class="t-corpo">mês seguinte</p></div></div></div>
+</section>
+<section class="cena cena-numero" id="cena-33" data-scene="cena-33" data-type="numero" data-slides="33" data-steps="1" data-chapter="05">
+<header class="cena-cab"><p class="cena-rotulo t-rotulo">JORNADA, PONTO E SALÁRIO · 05</p><h2 class="cena-titulo t-cena">Faltas, atrasos e atestados</h2></header>
+<div class="num-corpo">
+<div class="vidro anima num-hero"><p class="t-rotulo">ATESTADO NO VIBE EM ATÉ</p><p class="contador num-grande" data-final="48 horas">48 horas</p><p class="t-corpo">após a consulta. Os atestados devem ser incluídos no Vibe dentro desse prazo.</p></div>
+<div class="vidro anima num-info"><h3 class="t-corpo num-sub">Faltas e atrasos sem aviso</h3><p class="t-corpo">O não comparecimento ao posto de trabalho, sem aviso ao líder e sem atestado ou documento da falta ou do atraso, implica desconto em folha de pagamento.</p></div>
+<div class="vidro anima num-info"><h3 class="t-corpo num-sub">Acompanhamento do RH</h3><p class="t-corpo">O RH faz um acompanhamento sobre o estado de saúde dos colaboradores.</p></div>
+<div class="vidro anima num-info num-link"><p class="t-corpo">Consulte a política completa: <a data-href="links.politicas" target="_blank" rel="noopener">Política de abonos e faltas</a></p><img class="qr-mini" src="assets/qr/politicas.png" alt="QR Code da política de abonos e faltas"></div>
+</div>
+</section>
+<section class="cena cena-passos" id="cena-34" data-scene="cena-34" data-type="passos" data-slides="34" data-steps="1" data-chapter="05">
+<header class="cena-cab"><p class="cena-rotulo t-rotulo">JORNADA, PONTO E SALÁRIO · 05</p><h2 class="cena-titulo t-cena">Portal do Colaborador: Vibe</h2></header>
+<div class="passos-corpo"><ol class="passos-lista passos-1col"><li class="passo anima"><span class="passo-n t-corpo">1</span><p class="t-corpo">Você recebe o convite de acesso ao Vibe um dia após a sua integração, no e-mail pessoal informado durante o processo.</p></li><li class="passo anima"><span class="passo-n t-corpo">2</span><p class="t-corpo">Verifique sua caixa de entrada e a pasta de spam. Em caso de dúvidas, entre em contato com a Laryssa.</p></li><li class="passo anima"><span class="passo-n t-corpo">3</span><p class="t-corpo">No portal você acessa seu holerite, solicita férias, inclui atestados e acompanha o status das suas solicitações.</p></li><li class="passo anima"><span class="passo-n t-corpo">4</span><p class="t-corpo">Atestados e solicitações são encaminhados ao seu líder imediato para aprovação.</p></li></ol>
+<div class="passos-lado"><figure class="vidro anima passos-fig"><img src="assets/img/2cd29db36a.webp" alt=""></figure>
+<p class="vidro anima passos-prazo t-corpo"><img class="icone" src="assets/img/dfecef575c.webp" alt=""><a data-href="links.vibe" data-bind="links.vibe" target="_blank" rel="noopener"></a><img class="qr-mini" src="assets/qr/vibe.png" alt="QR Code do portal Vibe"></p></div></div>
+</section>
+<section class="cena cena-passos" id="cena-35" data-scene="cena-35" data-type="passos" data-slides="35" data-steps="1" data-chapter="05">
+<header class="cena-cab"><p class="cena-rotulo t-rotulo">JORNADA, PONTO E SALÁRIO · 05</p><h2 class="cena-titulo t-cena">Como incluir um atestado no Vibe</h2></header>
+<div class="passos-corpo"><ol class="passos-lista"><li class="passo anima"><span class="passo-n t-corpo">1</span><p class="t-corpo">Abra uma nova solicitação no Vibe.</p></li><li class="passo anima"><span class="passo-n t-corpo">2</span><p class="t-corpo">Selecione o tipo: Atestado, Doação de Sangue ou Declaração de Acompanhamento de Dependente.</p></li><li class="passo anima"><span class="passo-n t-corpo">3</span><p class="t-corpo">Informe a data correspondente.</p></li><li class="passo anima"><span class="passo-n t-corpo">4</span><p class="t-corpo">Anexe o documento necessário.</p></li><li class="passo anima"><span class="passo-n t-corpo">5</span><p class="t-corpo">Clique em “Enviar” para concluir a solicitação.</p></li><li class="passo anima"><span class="passo-n t-corpo">6</span><p class="t-corpo">Acompanhe o status da aprovação no sistema. A aprovação é feita pelo seu líder imediato.</p></li></ol>
+<div class="passos-lado"><figure class="vidro anima passos-fig"><img src="assets/img/9cc8b0276a.webp" alt=""></figure>
+<p class="vidro anima passos-prazo t-corpo"><img class="icone" src="assets/img/5544c068e1.webp" alt=""><span><strong>Prazo:</strong> inclua o atestado em até 48 horas após a consulta.</span></p></div></div>
+</section>
+<section class="cena cena-numero" id="cena-36" data-scene="cena-36" data-type="numero" data-slides="36" data-steps="1" data-chapter="05">
+<header class="cena-cab"><p class="cena-rotulo t-rotulo">JORNADA, PONTO E SALÁRIO · 05</p><h2 class="cena-titulo t-cena">Seu salário é pago em duas datas</h2></header>
+<div class="num-corpo">
+<div class="vidro anima num-hero"><p class="t-rotulo">PAGAMENTO</p><p class="num-grande">Dia 05</p><p class="t-corpo">Pagamento mensal do salário. Nele são descontados:</p><ul class="fichas"><li class="ficha t-corpo">INSS</li><li class="ficha t-corpo">Vale-transporte</li><li class="ficha t-corpo">Assistência médica</li><li class="ficha t-corpo">Odontológico</li><li class="ficha t-corpo">Farmácia</li><li class="ficha t-corpo">Refeição</li><li class="ficha t-corpo">e-Consignado</li><li class="ficha t-corpo">Outros benefícios</li></ul></div>
+<div class="vidro anima num-pag"><p class="t-rotulo">ADIANTAMENTO</p><p class="num-medio">Dia 20</p><p class="num-medio contador" data-final="40%">40%</p><p class="t-corpo">do salário</p></div>
+<div class="vidro anima num-info"><p class="t-corpo">Liberado só depois dos seus primeiros 30 dias de trabalho.</p><p class="t-corpo">Sobre ele são retidos o Imposto de Renda e a parte proporcional do e-Consignado.</p><p class="t-corpo">O primeiro adiantamento é pago a partir do segundo mês.</p></div>
+<p class="vidro anima num-info t-corpo">e-Consignado: empréstimo com parcelas descontadas direto do salário.</p>
+</div>
+</section>
+<section class="cena cena-numero" id="cena-37" data-scene="cena-37" data-type="numero" data-slides="37" data-steps="1" data-chapter="05">
+<header class="cena-cab"><p class="cena-rotulo t-rotulo">JORNADA, PONTO E SALÁRIO · 05</p><h2 class="cena-titulo t-cena">Pagamento para prestadores de serviços (PJ)</h2></header>
+<div class="num-corpo">
+<div class="vidro anima num-hero"><p class="t-rotulo">NOTA FISCAL</p><p class="contador num-grande" data-final="2 dias">2 dias</p><p class="t-corpo">é o prazo de antecedência para enviar a nota fiscal ao RH.</p></div>
+<div class="vidro anima num-pag"><img class="icone" src="assets/img/2529058aff.webp" alt=""><h3 class="t-corpo num-sub">Pagamento</h3><p class="t-corpo">A nf deve ser emitida no dia 01 de cada mês para pagamento no dia 05 ou de acordo com o calendário vigente. Os benefícios são descontados nessa etapa.</p></div>
+<div class="vidro anima num-pag"><img class="icone" src="assets/img/ecac02b53a.webp" alt=""><h3 class="t-corpo num-sub">Férias</h3><p class="t-corpo">Após 12 meses de contrato, o PJ tem direito a 30 dias de recesso. As datas devem ser combinadas com a liderança, e o RH deve ser comunicado.</p></div>
+</div>
+</section>
+<section class="cena cena-numero" id="cena-38" data-scene="cena-38" data-type="numero" data-slides="38" data-steps="1" data-chapter="05">
+<header class="cena-cab"><p class="cena-rotulo t-rotulo">JORNADA, PONTO E SALÁRIO · 05</p><h2 class="cena-titulo t-cena">Férias: como funciona</h2></header>
+<div class="num-corpo num-4">
+<div class="vidro anima num-hero"><p class="t-rotulo">FÉRIAS</p><p class="contador num-grande" data-final="30 dias">30 dias</p><p class="t-corpo">Após 12 meses de trabalho, você tem direito a 30 dias de férias.</p></div>
+<div class="vidro anima num-pag"><img class="icone" src="assets/img/cc9c2b6817.webp" alt=""><h3 class="t-corpo num-sub">Peça com antecedência</h3><p class="t-corpo">Solicite no Vibe, com aprovação do líder imediato e do RH, com no mínimo 30 dias de antecedência da data de início.</p></div><div class="vidro anima num-pag"><img class="icone" src="assets/img/ce2f3c1efc.webp" alt=""><h3 class="t-corpo num-sub">Pode dividir em até 3 períodos</h3><p class="t-corpo">Um período com no mínimo 14 dias; os outros com no mínimo 5 dias.</p></div><div class="vidro anima num-pag"><img class="icone" src="assets/img/5b5f5df795.webp" alt=""><h3 class="t-corpo num-sub">Venda de férias (abono pecuniário)</h3><p class="t-corpo">Só pode ser feita no primeiro período, até o limite de 10 dias.</p></div><div class="vidro anima num-pag"><img class="icone" src="assets/img/2529058aff.webp" alt=""><h3 class="t-corpo num-sub">Pagamento</h3><p class="t-corpo">Inclui salário + 1/3 e é feito até 2 dias antes do início das férias.</p></div>
+</div>
+</section>
+<section class="cena cena-tabela" id="cena-39" data-scene="cena-39" data-type="tabela" data-slides="39" data-steps="1" data-chapter="05">
+<header class="cena-cab"><p class="cena-rotulo t-rotulo">JORNADA, PONTO E SALÁRIO · 05</p><h2 class="cena-titulo t-cena">Faltas injustificadas reduzem os dias de férias</h2></header>
+<div class="tab-grade">
+<section class="vidro tab-bloco anima"><h3 class="t-rotulo">PERÍODO AQUISITIVO</h3><p class="t-corpo">É o período de 12 meses de trabalho que dá direito às férias. A quantidade de dias de férias varia conforme as faltas injustificadas nesse período, como determina a legislação trabalhista.</p></section>
+<section class="vidro tab-bloco anima"><table class="t-corpo"><thead><tr><th>Faltas injustificadas</th><th>Dias de férias</th></tr></thead><tbody data-tabela="ferias-faltas"></tbody></table></section>
+</div>
+</section>
+<!-- /CAP:jornada -->
+<!-- CAP:beneficios -->
+<section class="cena cena-capa" id="cena-40" data-scene="cena-40" data-type="capa" data-slides="40" data-steps="1" data-chapter="06">
+<div class="luzes" aria-hidden="true"><i class="luz luz-a"></i><i class="luz luz-b"></i><i class="luz luz-c"></i></div>
+<p class="capa-num t-capa">06</p>
+<h1 class="t-capa capa-titulo">Benefícios</h1>
+<p class="t-corpo capa-sub">#SOMOSAMORPELOQUEFAZEMOS</p>
+</section>
+<section class="cena cena-tabela" id="cena-41" data-scene="cena-41" data-type="tabela" data-slides="41" data-steps="3" data-chapter="06">
+<header class="cena-cab"><p class="cena-rotulo t-rotulo">BENEFÍCIOS · 06</p><h2 class="cena-titulo t-cena">Seus benefícios em um só lugar</h2></header>
+<div class="tab-grade tab-larga"><section class="vidro tab-bloco anima"><table class="t-corpo"><thead><tr><th>Benefício</th><th>Valor</th><th>Quando / como</th><th>Quem tem direito</th></tr></thead><tbody data-tabela="beneficios"></tbody></table></section></div>
+</section>
+<section class="cena cena-comparativo" id="cena-42" data-scene="cena-42" data-type="comparativo" data-slides="42" data-steps="1" data-chapter="06">
+<header class="cena-cab"><p class="cena-rotulo t-rotulo">BENEFÍCIOS · 06</p><h2 class="cena-titulo t-cena">Vale-transporte: quando o saldo cai</h2></header>
+<p class="cmp-intro t-rotulo">Artigo 4º | Lei nº 7.418/85</p>
+<div class="cmp-colunas cmp-3">
+<div class="vidro anima coluna"><img class="icone" src="assets/img/ecac02b53a.webp" alt=""><p class="t-rotulo">1º TURNO</p><p class="num-medio vt-dia">Último dia útil do mês</p><p class="t-corpo">O saldo cai no seu cartão de transporte. O valor é calculado pelos dias trabalhados.</p></div>
+<div class="vidro anima coluna"><img class="icone" src="assets/img/418f3ca586.webp" alt=""><p class="t-rotulo">2º TURNO</p><p class="num-medio vt-dia">1º dia útil do mês</p><p class="t-corpo">O pagamento é feito no cartão Flash Benefícios.</p></div>
+<div class="vidro anima coluna"><p class="t-rotulo">COMO O VALOR É CALCULADO</p><p class="t-corpo">A VT Soluções carrega o saldo conforme os dias úteis trabalhados.</p><p class="t-corpo">Faltas e atestados de dia inteiro são descontados.</p><p class="t-corpo">Trabalho em sábado ou domingo é pago.</p><p class="t-corpo">Sobrou saldo do mês anterior? Só é carregado o valor necessário.</p></div>
+</div>
+<div class="cmp-avisos">
+<p class="vidro anima cmp-aviso t-corpo"><img class="icone" src="assets/img/c410d9587d.webp" alt=""><span><strong>Até o dia 15</strong>  Peça cancelamento ou ajuste do VT até o dia 15 de cada mês.</span></p>
+<p class="vidro anima cmp-aviso t-corpo"><img class="icone" src="assets/img/73ea28b549.webp" alt=""><span><strong>Recém-chegado?</strong>  Suas primeiras passagens são pagas via Pix em até 3 dias após o início.</span></p>
+</div>
+</section>
+<section class="cena cena-numero" id="cena-43" data-scene="cena-43" data-type="numero" data-slides="43" data-steps="1" data-chapter="06">
+<header class="cena-cab"><p class="cena-rotulo t-rotulo">BENEFÍCIOS · 06</p><h2 class="cena-titulo t-cena">Auxílio Mobilidade Noturna</h2></header>
+<div class="num-corpo">
+<div class="vidro anima num-hero"><p class="t-rotulo">VALOR MENSAL</p><p class="num-grande" data-bind="valores.mobilidade"></p><p class="t-corpo">creditado no cartão Flash</p></div>
+<div class="vidro anima num-pag"><p class="t-rotulo">PAGAMENTO</p><p class="num-medio">Dia 15</p><p class="t-corpo">O pagamento é feito no primeiro mês da data de admissão.</p></div>
+<div class="vidro anima num-info num-ic"><img class="icone" src="assets/img/418f3ca586.webp" alt=""><h3 class="t-corpo num-sub">Para quem é</h3><p class="t-corpo">Colaboradores do 2º turno. O benefício foi criado para oferecer suporte financeiro ao deslocamento até o trabalho.</p></div>
+<div class="vidro anima num-info num-ic"><img class="icone" src="assets/img/bd37a8b77a.webp" alt=""><h3 class="t-corpo num-sub">Por que existe</h3><p class="t-corpo">Como não há transporte público nesse horário, é previsto o uso de veículo próprio, como carro ou moto.</p></div>
+</div>
+</section>
+<section class="cena cena-comparativo" id="cena-44" data-scene="cena-44" data-type="comparativo" data-slides="44" data-steps="1" data-chapter="06">
+<header class="cena-cab"><p class="cena-rotulo t-rotulo">BENEFÍCIOS · 06</p><h2 class="cena-titulo t-cena">Refeitório: horários das refeições</h2></header>
+<table class="refeit t-corpo anima"><tbody data-tabela="refeitorio"></tbody></table>
+<div class="refeit-baixo">
+<div class="refeit-paineis">
+<p class="vidro anima cmp-aviso t-corpo"><img class="icone" src="assets/img/45bc34301d.webp" alt=""><span>O desconto da refeição é feito conforme a faixa salarial do colaborador. A mesma regra vale para os colaboradores de campo.</span></p>
+<p class="vidro anima cmp-aviso t-corpo"><img class="icone" src="assets/img/1ffe66c6c2.webp" alt=""><span>Comitê do Refeitório  | Reporte | Sugestões e melhorias</span></p>
+</div>
+<figure class="vidro anima refeit-foto"><img src="assets/img/f1cfbf921f.webp" alt=""></figure>
+<div class="vidro anima refeit-link"><p class="t-corpo">Consulte: <a data-href="links.politicas" target="_blank" rel="noopener">Política do refeitório</a></p><img class="qr-mini" src="assets/qr/politicas.png" alt="QR Code das políticas Deltec"></div>
+</div>
+</section>
+<section class="cena cena-cards" id="cena-45" data-scene="cena-45" data-type="cards" data-slides="45" data-steps="1" data-chapter="06">
+<header class="cena-cab"><p class="cena-rotulo t-rotulo">BENEFÍCIOS · 06</p><h2 class="cena-titulo t-cena">Refeitório: regras e descontos</h2></header>
+<div class="cards-ref"><ul class="cards-grade cards-lista">
+<li class="card anima"><img src="assets/img/c235b1508a.webp" alt=""><div><strong class="t-corpo">Refeitório interno</strong><p class="t-corpo">A empresa disponibiliza refeitório interno, com desconto em folha conforme a faixa salarial.</p></div></li>
+<li class="card anima"><img src="assets/img/bd37a8b77a.webp" alt=""><div><strong class="t-corpo">Atividades externas</strong><p class="t-corpo">Pode ser concedido o benefício de alimentação/refeição, que substitui o refeitório. Não é permitido usar os dois ao mesmo tempo.</p></div></li>
+<li class="card anima"><img src="assets/img/2529058aff.webp" alt=""><div><strong class="t-corpo">Descontos</strong><p class="t-corpo">Os descontos seguem os mesmos critérios nas duas modalidades, mediante autorização do colaborador.</p></div></li>
+<li class="card anima"><img src="assets/img/1f86f6a55f.webp" alt=""><div><strong class="t-corpo">Uso adequado</strong><p class="t-corpo">É proibido o uso indevido, sujeito a medidas disciplinares. As condições seguem as políticas internas e fazem parte do contrato de trabalho.</p></div></li>
+</ul>
+<div class="vidro anima refeit-link refeit-lado"><p class="t-corpo">Consulte: <a data-href="links.politicas" target="_blank" rel="noopener">Política do refeitório</a></p><img class="qr-mini" src="assets/qr/politicas.png" alt="QR Code das políticas Deltec"></div></div>
+</section>
+<section class="cena cena-numero" id="cena-46" data-scene="cena-46" data-type="numero" data-slides="46" data-steps="1" data-chapter="06">
+<header class="cena-cab"><p class="cena-rotulo t-rotulo">BENEFÍCIOS · 06</p><h2 class="cena-titulo t-cena">Vale-Alimentação</h2></header>
+<div class="num-corpo num-masc">
+<div class="vidro anima num-hero"><p class="t-rotulo">VALOR</p><p class="num-grande" data-bind="valores.va"></p><p class="t-corpo">por mês no cartão Flash</p></div>
+<div class="vidro anima num-info num-ic"><img class="icone" src="assets/img/cc9c2b6817.webp" alt=""><p class="t-rotulo">CARREGAMENTO MENSAL</p><p class="num-medio">Todo dia 1º</p></div>
+<div class="vidro anima num-info num-ic"><img class="icone" src="assets/img/43d84b33d3.webp" alt=""><h3 class="t-corpo num-sub">Quem tem direito</h3><p class="t-corpo">Todos os colaboradores no regime CLT e estágio.</p></div>
+<div class="vidro anima num-info num-ic"><img class="icone" src="assets/img/b1f6b81544.webp" alt=""><h3 class="t-corpo num-sub">Onde usar</h3><p class="t-corpo">Aplicativo, em redes credenciadas.</p></div>
+<img class="mascote mascote-base" data-pose="mostra" src="assets/img/e0231b02ab.webp" alt="">
+</div>
+</section>
+<section class="cena cena-numero" id="cena-47" data-scene="cena-47" data-type="numero" data-slides="47" data-steps="1" data-chapter="06">
+<header class="cena-cab"><p class="cena-rotulo t-rotulo">BENEFÍCIOS · 06</p><h2 class="cena-titulo t-cena">Programa de Assiduidade</h2></header>
+<div class="num-corpo num-masc">
+<div class="vidro anima num-hero"><p class="t-rotulo">VALOR</p><p class="num-grande" data-bind="valores.assiduidade"></p><p class="t-corpo">por mês, para quem segue as regras do programa</p></div>
+<div class="vidro anima num-info num-ic"><img class="icone" src="assets/img/cc9c2b6817.webp" alt=""><p class="t-rotulo">CARREGAMENTO MENSAL</p><p class="num-medio">Todo dia 15</p></div>
+<div class="vidro anima num-info num-ic"><img class="icone" src="assets/img/43d84b33d3.webp" alt=""><h3 class="t-corpo num-sub">Quem tem direito</h3><p class="t-corpo">Todos os colaboradores no regime CLT que seguirem as regras do programa.</p></div>
+<div class="vidro anima num-info num-ic"><img class="icone" src="assets/img/b1f6b81544.webp" alt=""><h3 class="t-corpo num-sub">Onde usar</h3><p class="t-corpo">Aplicativo Flash, em redes credenciadas.</p></div>
+<div class="vidro anima num-info num-link"><p class="t-corpo">Consulte: <a data-href="links.assiduidade" target="_blank" rel="noopener">Regras do Programa de Assiduidade</a></p><img class="qr-mini" src="assets/qr/assiduidade.png" alt="QR Code das regras do Programa de Assiduidade"></div>
+<img class="mascote mascote-base" data-pose="joia" src="assets/img/7e11f1844a.webp" alt="">
+</div>
+</section>
+<section class="cena cena-numero" id="cena-48" data-scene="cena-48" data-type="numero" data-slides="48" data-steps="1" data-chapter="06">
+<header class="cena-cab"><p class="cena-rotulo t-rotulo">BENEFÍCIOS · 06</p><h2 class="cena-titulo t-cena">Uniodonto: plano odontológico</h2></header>
+<div class="pl-corpo">
+<div class="pl-esq">
+<figure class="vidro anima pl-logo"><img class="mascote" data-pose="mostra" src="assets/img/64fe127b79.webp" alt=""></figure>
+<div class="vidro anima num-hero"><p class="t-rotulo">VALOR</p><p class="num-grande" data-bind="valores.uniodonto"></p><p class="t-corpo">Uniodonto Campinas · Região de Campinas</p></div>
+</div>
+<div class="pl-dir">
+<div class="vidro anima"><h3 class="t-corpo num-sub">Dependentes</h3><p class="t-corpo">A inclusão de dependentes pode ser feita com qualquer grau de parentesco.</p></div>
+<div class="vidro anima"><h3 class="t-corpo num-sub">Fidelidade de 12 meses</h3><p class="t-corpo">O prazo de fidelidade é de um ano após a data da inclusão (12 meses).</p></div>
+<div class="vidro anima pl-largo"><h3 class="t-corpo num-sub">O que o plano cobre</h3><p class="t-corpo">Procedimentos simples e complexos, como limpezas, restaurações, próteses, exames, cirurgias e urgências. Todos os planos da Uniodonto Campinas têm cobertura nacional e atendimento de emergência 24h.</p></div>
+<p class="vidro anima cmp-aviso t-corpo"><img class="icone" src="assets/img/3f571065ab.webp" alt=""><span><strong>PJ:</strong>  os valores serão descontados na respectiva nota fiscal.</span></p>
+</div>
+</div>
+</section>
+<section class="cena cena-numero" id="cena-49" data-scene="cena-49" data-type="numero" data-slides="49" data-steps="1" data-chapter="06">
+<header class="cena-cab"><p class="cena-rotulo t-rotulo">BENEFÍCIOS · 06</p><h2 class="cena-titulo t-cena">Samaritano Saúde: regras do plano</h2></header>
+<div class="pl-corpo">
+<div class="pl-esq">
+<figure class="vidro anima pl-logo"><img src="assets/img/205d726d23.webp" alt=""></figure>
+<div class="vidro anima num-hero"><p class="t-rotulo">VALOR</p><p class="num-medio">Conforme salário e faixa etária</p><p class="t-corpo">Regra aplicável a Campinas e região</p></div>
+</div>
+<div class="pl-dir">
+<div class="vidro anima"><h3 class="t-corpo num-sub">Dependentes</h3><p class="t-corpo">É permitida a inclusão de filhos e cônjuges, mediante apresentação de documentação comprobatória.</p></div>
+<div class="vidro anima"><h3 class="t-corpo num-sub">Onde vale</h3><p class="t-corpo">A regra é aplicável a Campinas e região.</p></div>
+<div class="vidro anima pl-largo"><h3 class="t-corpo num-sub">Coparticipação</h3><p class="t-corpo">Os valores referentes à utilização do plano são descontados em folha de pagamento. O limite máximo de desconto mensal por colaborador é de <span data-bind="valores.samaritanoTeto"></span>. Se esse valor for ultrapassado, a Deltec assume o excedente.</p></div>
+<p class="vidro anima cmp-aviso t-corpo"><img class="icone" src="assets/img/3f571065ab.webp" alt=""><span><strong>PJ:</strong>  os valores serão descontados na respectiva nota fiscal.</span></p>
+</div>
+</div>
+</section>
+<section class="cena cena-tabela" id="cena-50" data-scene="cena-50" data-type="tabela" data-slides="50" data-steps="1" data-chapter="06">
+<header class="cena-cab"><p class="cena-rotulo t-rotulo">BENEFÍCIOS · 06</p><h2 class="cena-titulo t-cena">Samaritano Saúde: valores</h2></header>
+<div class="tab-grade">
+<figure class="vidro anima tab-bloco pl-logo"><img src="assets/img/3d3a1a25b5.webp" alt=""></figure>
+<div class="tab-dir">
+<section class="vidro tab-bloco anima"><h3 class="t-rotulo">COPARTICIPAÇÃO</h3><table class="t-corpo"><thead><tr><th>Procedimento</th><th>Valor</th></tr></thead><tbody data-tabela="samaritano"></tbody></table></section>
+<p class="vidro anima tab-nota t-corpo"><img class="icone" src="assets/img/cedf1e3189.webp" alt=""><span><strong>Retorno gratuito</strong>  se ocorrer em até 30 dias da consulta anterior.</span></p>
+</div></div>
+</section>
+<section class="cena cena-numero" id="cena-51" data-scene="cena-51" data-type="numero" data-slides="51" data-steps="1" data-chapter="06">
+<header class="cena-cab"><p class="cena-rotulo t-rotulo">BENEFÍCIOS · 06</p><h2 class="cena-titulo t-cena">Bradesco Saúde: regras do plano</h2></header>
+<div class="pl-corpo">
+<div class="pl-esq">
+<figure class="vidro anima pl-logo"><img src="assets/img/dd7057ff6b.webp" alt=""></figure>
+<div class="vidro anima num-hero"><p class="t-rotulo">VALOR</p><p class="num-medio">Conforme faixa etária</p><p class="t-corpo">Mensalidade por faixa etária (veja a tabela no próximo slide)</p></div>
+</div>
+<div class="pl-dir">
+<div class="vidro anima"><h3 class="t-corpo num-sub">Dependentes</h3><p class="t-corpo">É permitida a inclusão de filhos e cônjuges, mediante apresentação de documentação comprobatória.</p></div>
+<div class="vidro anima"><h3 class="t-corpo num-sub">Coparticipação</h3><p class="t-corpo">Os valores referentes à utilização do plano são descontados diretamente em folha. Aplica-se a todos os colaboradores.</p></div>
+<div class="vidro anima pl-largo"><h3 class="t-corpo num-sub">Elegibilidade para PJ</h3><p class="t-corpo">Colaboradores PJ podem aderir ao plano de saúde após 6 meses de prestação de serviços à empresa.</p></div>
+<p class="vidro anima cmp-aviso t-corpo"><img class="icone" src="assets/img/3f571065ab.webp" alt=""><span><strong>PJ:</strong>  os valores serão descontados na respectiva nota fiscal.</span></p>
+</div>
+</div>
+</section>
+<section class="cena cena-tabela" id="cena-52" data-scene="cena-52" data-type="tabela" data-slides="52" data-steps="3" data-chapter="06">
+<header class="cena-cab"><p class="cena-rotulo t-rotulo">BENEFÍCIOS · 06</p><h2 class="cena-titulo t-cena">Bradesco Saúde: mensalidade e coparticipação</h2></header>
+<div class="tab-grade">
+<section class="vidro tab-bloco anima"><h3 class="t-rotulo">MENSALIDADE POR FAIXA ETÁRIA</h3><table class="t-corpo"><thead><tr><th>Faixa etária</th><th>Titular</th><th>Dependente</th></tr></thead><tbody data-tabela="bradesco-mensalidade"></tbody></table></section>
+<div class="tab-dir" data-etapa="2">
+<section class="vidro tab-bloco"><h3 class="t-rotulo">COPARTICIPAÇÃO · NACIONAL II (ENFERMARIA)</h3><p class="t-corpo">Valor que você paga cada vez que usa o plano, descontado em folha.</p><table class="t-corpo"><thead><tr><th>Procedimento</th><th>Valor</th></tr></thead><tbody data-tabela="bradesco-coparticipacao"></tbody></table></section>
+<p class="vidro tab-nota t-corpo"><img class="icone" src="assets/img/cedf1e3189.webp" alt=""><span>Consulta eletiva: <span data-bind="planos.bradesco.coparticipacao.1.valor"></span>.  <strong>Retorno gratuito</strong> se for em até 30 dias da consulta anterior.</span></p>
+</div></div>
+</section>
+<section class="cena cena-cards" id="cena-53" data-scene="cena-53" data-type="cards" data-slides="53" data-steps="1" data-chapter="06">
+<header class="cena-cab"><p class="cena-rotulo t-rotulo">BENEFÍCIOS · 06</p><h2 class="cena-titulo t-cena">Farmácia: descontos em medicamentos</h2></header>
+<div class="farm-corpo">
+<div class="vidro anima farm-card"><img class="farm-img" src="assets/img/7e2a7d43f9.webp" alt=""><p class="t-rotulo">FARMAHELP</p><p class="num-medio">até <span data-bind="valores.farmacia"></span></p><p class="t-corpo">O colaborador tem direito a até <span data-bind="valores.farmacia"></span>, descontado em folha.</p></div>
+<div class="vidro anima farm-card"><div class="farm-logos"><img class="farm-img" src="assets/img/eda56bb5fe.webp" alt=""><img class="farm-img" src="assets/img/e884f3b5aa.webp" alt=""></div><p class="t-rotulo">DROGA RAIA E DROGASIL</p><p class="num-medio">Desconto exclusivo</p><p class="t-corpo">Desconto em medicamentos exclusivo para funcionários da Deltec, sem desconto em folha.</p></div>
+<p class="vidro anima cmp-aviso t-corpo farm-pj"><img class="icone" src="assets/img/3f571065ab.webp" alt=""><span><strong>PJ:</strong>  os PJs também têm direito a este benefício, com desconto na nota.</span></p>
+</div>
+</section>
+<section class="cena cena-passos" id="cena-54" data-scene="cena-54" data-type="passos" data-slides="54" data-steps="1" data-chapter="06">
+<header class="cena-cab"><p class="cena-rotulo t-rotulo">BENEFÍCIOS · 06</p><h2 class="cena-titulo t-cena">TotalPass: academias para você</h2></header>
+<div class="passos-corpo"><ol class="passos-lista passos-1col"><li class="passo anima"><span class="passo-n t-corpo">1</span><p class="t-corpo">Cadastre-se no aplicativo e aguarde a liberação do RH.</p></li><li class="passo anima"><span class="passo-n t-corpo">2</span><p class="t-corpo">Escolha o seu plano. O valor será descontado em folha de pagamento.</p></li><li class="passo anima"><span class="passo-n t-corpo">3</span><p class="t-corpo">Você também pode incluir dependentes. O pagamento deles é feito diretamente pelo app, via cartão de crédito ou débito.</p></li></ol>
+<div class="tp-fig anima"><figure class="tp-foto"><img src="assets/img/55bfa48312.webp" alt=""><img class="tp-logo" src="assets/img/2ecdeb1223.webp" alt=""></figure></div><img class="mascote mascote-base" data-pose="joia" src="assets/img/46bb8c34cf.webp" alt=""></div>
+</section>
+<section class="cena cena-cards" id="cena-55" data-scene="cena-55" data-type="cards" data-slides="55" data-steps="1" data-chapter="06">
+<header class="cena-cab"><p class="cena-rotulo t-rotulo">BENEFÍCIOS · 06</p><h2 class="cena-titulo t-cena">Parcerias com universidades</h2></header>
+<div class="par-corpo">
+<div class="par-txt">
+<p class="t-corpo">A Deltec fez parcerias com instituições renomadas para oferecer descontos exclusivos em cursos de graduação e pós-graduação aos colaboradores.</p>
+<p class="t-rotulo par-rot">INSTITUIÇÕES PARCEIRAS</p>
+<ul class="par-lista par-3"><li class="vidro anima t-corpo">Anhanguera Educacional</li><li class="vidro anima t-corpo">Unimetrocamp</li><li class="vidro anima t-corpo">FGV (Fundação Getúlio Vargas)</li></ul>
+<p class="t-rotulo par-rot">MODALIDADES DISPONÍVEIS</p>
+<ul class="par-lista par-3"><li class="vidro anima t-corpo par-pill"><img class="icone" src="assets/img/b08856a2e8.webp" alt=""><span>Presencial</span></li><li class="vidro anima t-corpo par-pill"><img class="icone" src="assets/img/b08856a2e8.webp" alt=""><span>EAD (Ensino a Distância)</span></li><li class="vidro anima t-corpo par-pill"><img class="icone" src="assets/img/b08856a2e8.webp" alt=""><span>Semipresencial</span></li></ul>
+<p class="vidro anima t-corpo par-nota">O benefício também é estendido a cônjuges e filhos, com condições especiais para o desenvolvimento acadêmico da família.</p>
+</div>
+<figure class="vidro anima par-fig"><img src="assets/img/519e64515b.webp" alt=""></figure>
+</div>
+</section>
+<section class="cena cena-cards" id="cena-56" data-scene="cena-56" data-type="cards" data-slides="56" data-steps="1" data-chapter="06">
+<header class="cena-cab"><p class="cena-rotulo t-rotulo">BENEFÍCIOS · 06</p><h2 class="cena-titulo t-cena">Parcerias com escolas de idiomas</h2></header>
+<div class="par-corpo">
+<div class="par-txt">
+<p class="t-corpo">A Deltec firmou parcerias com instituições de prestígio para oferecer descontos exclusivos em cursos de idiomas para seus colaboradores.</p>
+<p class="t-rotulo par-rot">INSTITUIÇÕES PARCEIRAS</p>
+<ul class="par-lista par-2"><li class="vidro anima t-corpo">CNA</li><li class="vidro anima t-corpo">Newcastle</li></ul>
+<p class="t-rotulo par-rot">MODALIDADES DISPONÍVEIS</p>
+<ul class="par-lista par-2"><li class="vidro anima t-corpo par-pill"><img class="icone" src="assets/img/b08856a2e8.webp" alt=""><span>Presencial</span></li><li class="vidro anima t-corpo par-pill"><img class="icone" src="assets/img/b08856a2e8.webp" alt=""><span>EAD (Ensino a Distância)</span></li></ul>
+<p class="vidro anima t-corpo par-nota">O benefício também é estendido a cônjuges e filhos, com condições especiais para o desenvolvimento acadêmico da família.</p>
+</div>
+<figure class="vidro anima par-fig"><img src="assets/img/bd65df655d.webp" alt=""></figure>
+</div>
+</section>
+<!-- /CAP:beneficios -->
+<!-- CAP:desenvolvimento -->
+<section class="cena cena-capa" id="cena-57" data-scene="cena-57" data-type="capa" data-slides="57" data-steps="1" data-chapter="07">
+<div class="luzes" aria-hidden="true"><i class="luz luz-a"></i><i class="luz luz-b"></i><i class="luz luz-c"></i></div>
+<p class="capa-num t-capa">07</p>
+<h1 class="t-capa capa-titulo">Desenvolvimento profissional</h1>
+<p class="t-corpo capa-sub">Recrutamento interno e a trajetória de quem já está aqui</p>
+</section>
+<section class="cena cena-passos" id="cena-58" data-scene="cena-58" data-type="passos" data-slides="58" data-steps="1" data-chapter="07">
+<header class="cena-cab"><p class="cena-rotulo t-rotulo">DESENVOLVIMENTO · 07</p><h2 class="cena-titulo t-cena">Recrutamento interno: como se candidatar</h2></header>
+<div class="passos-corpo"><div class="passos-col">
+<ol class="passos-lista passos-1col"><li class="passo anima"><span class="passo-n t-corpo">1</span><p class="t-corpo">Retire o formulário de candidatura com o RH.</p></li><li class="passo anima"><span class="passo-n t-corpo">2</span><p class="t-corpo">Preencha o formulário de forma completa e precisa.</p></li><li class="passo anima"><span class="passo-n t-corpo">3</span><p class="t-corpo">Obtenha a aprovação do seu líder antes de enviar.</p></li><li class="passo anima"><span class="passo-n t-corpo">4</span><p class="t-corpo">Entregue o formulário preenchido, dentro do prazo estabelecido, para o RH.</p></li></ol>
+<p class="vidro anima passos-prazo t-corpo"><img class="icone" src="assets/img/eea83195bb.webp" alt=""><span><strong>Para formalizar:</strong> entregue ao RH o formulário preenchido e assinado e o currículo atualizado.</span></p></div>
+<div class="passos-lado">
+<div class="vidro anima coluna"><p class="t-rotulo">QUEM PODE SE CANDIDATAR</p><p class="num-medio">6 meses</p><p class="t-corpo">no cargo atual, além de atender aos requisitos da vaga. Verifique os critérios antes de iniciar o processo.</p></div>
+<p class="vidro anima t-corpo">O salário para a vaga será compartilhado somente com os candidatos aprovados durante o processo seletivo.</p></div></div>
+</section>
+<!-- /CAP:desenvolvimento -->
+<!-- CAP:rh-e-voce -->
+<section class="cena cena-capa" id="cena-59" data-scene="cena-59" data-type="capa" data-slides="59" data-steps="1" data-chapter="08">
+<div class="luzes" aria-hidden="true"><i class="luz luz-a"></i><i class="luz luz-b"></i><i class="luz luz-c"></i></div>
+<p class="capa-num t-capa">08</p>
+<h1 class="t-capa capa-titulo">RH &amp; Você</h1>
+<p class="t-corpo capa-sub">Atendimento, indicações e a sua opinião</p>
+</section>
+<section class="cena cena-comparativo" id="cena-60" data-scene="cena-60" data-type="comparativo" data-slides="60" data-steps="1" data-chapter="08">
+<header class="cena-cab"><p class="cena-rotulo t-rotulo">RH &amp; VOCÊ · 08</p><h2 class="cena-titulo t-cena">Atendimento do RH</h2></header>
+<div class="rh-grade">
+<div class="rh-turnos">
+<div class="vidro anima coluna"><p class="t-rotulo" data-bind="rh.turnos.0.turno"></p><p class="num-medio" data-bind="rh.turnos.0.horario"></p><p class="t-corpo" data-bind="rh.turnos.0.dias"></p></div>
+<div class="vidro anima coluna"><p class="t-rotulo" data-bind="rh.turnos.1.turno"></p><p class="num-medio" data-bind="rh.turnos.1.horario"></p><p class="t-corpo" data-bind="rh.turnos.1.dias"></p></div>
+<div class="vidro anima cmp-aviso t-corpo rh-afast"><img class="icone" src="assets/img/b1f6b81544.webp" alt=""><span><strong>AFASTADOS E COLABORADORES DE CAMPO</strong><br>Atendimento via WhatsApp dentro dos horários indicados.</span></div>
+</div>
+<figure class="anima rh-mascote"><img class="mascote" data-pose="joia" src="assets/img/50dd8e2021.webp" alt=""><figcaption class="vidro t-rotulo">Fale com o RH!</figcaption></figure>
+</div>
+</section>
+<section class="cena cena-passos" id="cena-61" data-scene="cena-61" data-type="passos" data-slides="61" data-steps="1" data-chapter="08">
+<header class="cena-cab"><p class="cena-rotulo t-rotulo">RH &amp; VOCÊ · 08</p><h2 class="cena-titulo t-cena">Indique e ganhe <span data-bind="valores.indique"></span></h2></header>
+<div class="passos-corpo passos-inv">
+<div class="passos-lado">
+<div class="vidro anima coluna"><p class="t-rotulo">PROGRAMA INDIQUE E GANHE</p><p class="num-grande" data-bind="valores.indique"></p><p class="t-corpo">de bônus no seu holerite</p></div>
+<div class="vidro anima passos-prazo t-corpo"><img class="icone" src="assets/img/ef6b7bc5a0.webp" alt=""><span>WhatsApp R&amp;S: <a data-href="links.whatsappRS" target="_blank" rel="noopener" data-bind="rh.whatsappRS"></a></span><img class="qr-mini" src="assets/qr/whatsapp-rs.png" alt="QR Code do WhatsApp do Recrutamento &amp; Seleção"></div></div>
+<ol class="passos-lista passos-1col"><li class="passo anima"><span class="passo-n t-corpo">1</span><p class="t-corpo">Envie o currículo da pessoa indicada, via WhatsApp, para o time de Recrutamento &amp; Seleção.</p></li><li class="passo anima"><span class="passo-n t-corpo">2</span><p class="t-corpo">A pessoa indicada é aprovada na entrevista.</p></li><li class="passo anima"><span class="passo-n t-corpo">3</span><p class="t-corpo">Ela conclui o período de experiência (90 dias).</p></li><li class="passo anima"><span class="passo-n t-corpo">4</span><p class="t-corpo">Você recebe um bônus de <span data-bind="valores.indique"></span> no seu holerite.</p></li></ol></div>
+</section>
+<section class="cena cena-qr" id="cena-62" data-scene="cena-62" data-type="qr" data-slides="62" data-steps="1" data-chapter="08">
+<header class="cena-cab"><p class="cena-rotulo t-rotulo">RH &amp; VOCÊ · 08</p><h2 class="cena-titulo t-cena">Avalie a nossa integração</h2></header>
+<div class="qr-corpo"><div class="qr-texto"><p class="t-corpo">Gostaríamos de saber sua opinião sobre nossa integração! Sua avaliação é essencial para melhorarmos continuamente.</p>
+<p class="vidro anima qr-obrigado t-corpo"><img class="icone" src="assets/img/ef6b7bc5a0.webp" alt=""><span><strong>Como responder:</strong> basta apontar a câmera do seu celular e responder o questionário!</span></p>
+<p class="vidro anima t-corpo"><strong>Obrigado pela sua atenção!</strong><br>Fico à disposição para qualquer dúvida.</p></div>
+<figure class="qr anima"><img src="assets/img/9e50beb68e.webp" alt="QR Code da avaliação da integração"><figcaption class="t-corpo">Aponte a câmera para o QR Code</figcaption></figure></div>
+</section>
+<!-- /CAP:rh-e-voce -->
+<div class="fundo-luz" aria-hidden="true"><i class="fl fl-a"></i><i class="fl fl-b"></i><i class="fl fl-c"></i><i class="fl-varre"></i><i class="fl-onda"></i></div>
+<script src="js/vendor/gsap.min.js"></script>
+<script src="js/vendor/ScrollTrigger.min.js"></script>
+<script src="js/vendor/ScrollToPlugin.min.js"></script>
+<script src="js/vendor/SplitText.min.js"></script>
+<script src="js/data.js"></script>
+<script src="js/layouts.js"></script>
+<script src="js/mascotes.js"></script>
+<script src="js/bind.js"></script>
+<script src="js/layouts-render.js"></script>
+<script src="js/cenas.js"></script>
+<script src="js/deck.js"></script>
+<script>
+gsap.registerPlugin(ScrollTrigger, ScrollToPlugin, SplitText);
+Bind.render(); Cenas.init(); Deck.init();
+window.__pronto = true;
+</script>
+</body>
+</html>
